@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HTML Layout using Tables</title>
+</head>
+
+<body>
+<table width = "80%" border = "0">
+
+    <tr>
+        <td colspan = "2" bgcolor = "black" style="color:#FFCC99;">
+            <h1>Beer Machine</h1>
+            <button style="background-color:#FB8D33;" type="button">Login</button>
+        </td>
+    </tr>
+    <tr valign = "top">
+        <td bgcolor = "#aaa" width = "200" height = "150">
+            <b>Main Menu</b>
+            <div class="row">
+                <div class="column">
+                    <ul>
+                        <li>Product type: IPA</li>
+                        <li>Product amount: 500</li>
+                        <li>Production speed: 10</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>Product produced: IPA</li>
+                        <li>Product left to produce: 500</li>
+                        <li>Time left: 10</li>
+                        <li>State: 2</li>
+                    </ul>
+                    <p id="dataValue"></p>
+
+                    <script>
+                            let s = 20;
+                            document.getElementById("dataValue").innerHTML = s.toString();
+                    </script>
+
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>Total good: 50</li>
+                        <li>Total bad: 5</li>
+                        <li>Efficiensy: 90%</li>
+                    </ul></div>
+            </div>
+        </td>
+
+        <td rowspan="2" bgcolor = "#aaa" width = "50" height = "200">
+            Ingredients
+            <ul>
+                <li>Barley</li>
+                <li>Wheat</li>
+                <li>Hops</li>
+                <li>Malt</li>
+                <li>Yeast</li>
+            </ul>
+        </td>
+    </tr>
+    <tr valign = "top">
+        <td bgcolor = "#aaa">
+            Sensors
+            <ul>
+                <li>Humidity : 60</li>
+                <li>Vibration: 10</li>
+                <li>Temperature: 20</li>
+            </ul>
+        </td>
+    </tr>
+
+</table>
+</body>
+
+</html>
